@@ -230,18 +230,33 @@ include "class/c_staff.php";
                             </div>
 
                             <div class="col-md-3">
-                                <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control select2" style="width: 100%" placeholder="Ex: 123" name="Password" required>  
+                            <label for="password">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password" name="Password" placeholder="Ex: 123" required>
+                                    <div class="input-group-append">
+                                    <i class="far fa-eye input-group-text" id="eye"></i>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
+                            <label for="password">Confirm Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Ex: 123" required>
+                                    <div class="input-group-append">
+                                    <i class="far fa-eye input-group-text" id="eyeConfirm"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- <div class="col-md-3">
                                 <div class="form-group">
                                 <label>Confirm Password</label>
                                 <input type="password" class="form-control select2" style="width: 100%" placeholder="Ex: 123" name="confirm_password" required>  
                                 </div>
-                            </div>
+                            </div> -->
 
                             <input class="btn btn-info btn-sm" type="submit" value="Back" name="back" style="margin:2px;" onclick="history.go(-1);"><!--back button-->
                             <input class="btn btn-primary btn-sm" id="submit"type="submit" value="Add Staff" style="margin:2px;"><!--add staff button-->
@@ -259,7 +274,7 @@ include "class/c_staff.php";
             </div><!--/card card-default -->
       </div><!--/container-fluid -->
     </section>
-
+<script src="js/passwordHide.js"></script>
 <script>
   $(document).ready(function(){
 
